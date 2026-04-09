@@ -1,0 +1,27 @@
+# Open Api Gateway Configuration
+
+app:
+  name: "Open Api Gateway"
+  version: "2.0.0"
+  debug: false
+
+features:
+  - Rate limiting
+  - Auth
+  - Caching
+  - Load balancing
+
+tech_stack:
+  - Redis
+  - JWT
+  - OpenAPI
+  - FastAPI
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+
+logging:
+  level: INFO
+  format: "%(asctime)s | %(levelname)s | %(message)s"
